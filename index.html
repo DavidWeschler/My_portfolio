@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ver2 David Weschler</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <section id="header">
       <nav>
         <p>David Weschler;</p>
+        <div class="hamburger">&#9776</div>
         <ul id="navbar">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -17,6 +19,24 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </section>
+    <section id="home">
+      <div class="profile">
+        <img src="./assets/profile-pic.png" alt="Profile Picture" />
+        <div class="profile-info">
+          <h5>Hi, I'm</h5>
+          <h1>David Weschler</h1>
+          <h4>Software Engineer</h4>
+          <button id="cv-btn">Download CV</button>
+          <button>Contact</button>
+          <a class="icon" href="https://github.com/DavidWeschler" target="_blank">
+            <img src="./assets/github.png" alt="GitHub Icon"/>
+          </a>
+          <a class="icon" href="https://www.linkedin.com/in/david-weschler/" target="_blank">
+            <img src="./assets/linkedin.png" alt="linkedin Icon"/>
+          </a>
+      </div>
+      </div>
     </section>
 
     <script src="script.js"></script>
