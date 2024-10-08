@@ -70,14 +70,28 @@ body {
 #home {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .profile {
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  /* color: blue; */
+  display: flex;
 }
 .profile img {
   width: 400px;
+  height: 400px;
+  /* margin-left: 35%; */
+  margin-top: 10%;
+}
+
+.profile-info {
+  display: grid;
+}
+
+/* Icons */
+
+.icon img {
+  width: 34px;
   height: auto;
-  margin-left: 35%;
-  margin-top: 25%;
 }
