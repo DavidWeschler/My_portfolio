@@ -23,8 +23,8 @@ h3 {
 }
 
 h4 {
-  color: #5f5e5e;
-  font-size: 20px;
+  color: #333;
+  font-size: 22px;
 }
 
 /* General Body Styling */
@@ -99,6 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
+  padding: 80px 20px;
 }
 
 .profile {
@@ -260,8 +261,13 @@ body {
 
 /* ------------------------------- Projects Section -------------------- */
 
+#projects {
+  padding: 80px 20px;
+}
 .projects-group {
-  /* width: 120%; */
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .proj-item {
@@ -274,13 +280,15 @@ body {
 
 .proj-item iframe {
   border: 1px solid #757575;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 300px;
   height: 170px;
 }
 
 .proj-item img {
-  width: 100%;
+  border: 1px solid #757575;
+  border-radius: 10px;
+  width: 80%;
   height: auto;
 }
 
@@ -289,6 +297,10 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+
+.proj-itself .web {
+  line-height: 1;
 }
 
 .skills-used ul {
@@ -304,8 +316,55 @@ body {
 
 .skills-used li {
   padding: 5px 10px;
-  border: 2px solid #333;
+  border: 1px solid #333;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+.proj-summary {
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proj-summary h4 {
+  margin-bottom: 10px;
+}
+
+.proj-summary p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.proj-btns {
+  padding: 20px;
+  text-align: center;
+}
+
+.proj-summary button {
+  background-color: rgb(231, 231, 231);
+  border: none;
+  border-radius: 35px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+}
+
+.proj-summary button:hover {
+  background-color: #181818;
+  color: rgb(233, 233, 233);
+}
+
+.proj-summary a {
+  text-decoration: none;
+}
+
+/* ------------------------------- Contact Section -------------------- */
