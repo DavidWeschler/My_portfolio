@@ -3,6 +3,7 @@
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.getElementById('navbar');
 const skillItems = document.querySelectorAll('.skill-item');
+// const form = document.getElementById('contact-form');
 
 // Hamburger Menu:
 hamburger.addEventListener('click', function () {
@@ -27,3 +28,12 @@ skillItems.forEach(item => {
     img.src = originalSrc;
   });
 });
+
+// form.addEventListener('submit', function (event) {
+//   const emailInput = document.querySelector('input[type="email"]');
+//   const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+//   if (!emailPattern.test(emailInput.value)) {
+//     // event.preventDefault();
+//   }
+// });

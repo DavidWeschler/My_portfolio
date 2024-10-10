@@ -206,12 +206,21 @@
     <section id="contact">
       <div class="section-info">
         <header class="sec-header"><h1>Keep in touch</h1></header>
-        <p>Feel free to drop a message, reach out or just say hello 😎</p>
-        <form>
+        <p id="contact-msg">
+          Feel free to drop a message, reach out or just say hello 😎
+        </p>
+        <form id="contact-form">
           <input placeholder="Full Name" />
-          <input placeholder="Email" />
-          <input placeholder="Message" />
-          <button>Send</button>
+
+          <input
+            type="email"
+            placeholder="Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Send</button>
         </form>
       </div>
     </section>

@@ -211,7 +211,7 @@ body {
 
 .section-info {
   /*global*/
-  max-width: 900px;
+  max-width: 900px; /*****************************************************************max width ***************/
   margin: 0 auto;
   padding: 10px;
 }
@@ -368,3 +368,55 @@ body {
 }
 
 /* ------------------------------- Contact Section -------------------- */
+
+#contact {
+  padding: 80px 20px;
+  background-color: #f7f7f7;
+}
+
+#contact-msg {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px; /* Space between paragraph and form */
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  transition: border 0.3s;
+  font-family: inherit;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #397456;
+  outline: none;
+}
+
+#contact-form button {
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #707070;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #397456;
+}
