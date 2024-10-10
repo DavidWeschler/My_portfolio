@@ -10,7 +10,7 @@
   <body>
     <section id="header">
       <nav>
-        <p>David Weschler;</p>
+        <p>David Weschler</p>
         <div class="hamburger">&#9776;</div>
         <ul id="navbar">
           <li><a href="#home">Home</a></li>
@@ -207,41 +207,41 @@
       <div class="section-info">
         <header class="sec-header"><h1>Keep in touch</h1></header>
         <p id="contact-msg">
-          Feel free to drop a message, reach out or just say hello 😎
+          Feel free to drop a message, reach out or just say Hello! 😎
         </p>
-        <form id="contact-form">
-          <input placeholder="Full Name" />
-
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/davidweschler8@gmail.com"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Name" required />
           <input
             type="email"
+            name="email"
             placeholder="Email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             required
           />
+          <textarea name="message" placeholder="Message" required></textarea>
 
-          <textarea placeholder="Message" required></textarea>
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5501/My_portfolio"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+
           <button type="submit">Send</button>
         </form>
       </div>
     </section>
 
-    <!-- <section id="delete_this">
-      <p>
-        -------------------------------------------------------------------------------------Practice
-        Here----------------------------------------------
-      </p>
-      <p>visit <a href="https://chatgpt.com/">ChatGPT</a></p>
-
-      <form action="https://www.google.com/search" method="get" target="_blank">
-        <input name="q" autofocus placeholder="type here" type="search" />
-        <button>search</button>
-      </form>
-    </section> -->
+    <footer>
+      <div class="footer-content">
+        <p>Copyright © 2024 David Weschler - All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-<!--add a form in contact, use regex to validate the email: <input pattern="regex_here"-->
-
-<!--use semantic tags!!! no divs-->
