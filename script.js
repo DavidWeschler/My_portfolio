@@ -2,17 +2,25 @@
 
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.getElementById('navbar');
+const menuItems = document.querySelectorAll('#navbar a');
 const skillItems = document.querySelectorAll('.skill-item');
+
+// Hamburger Menu:
+hamburger.addEventListener('click', function () {
+  navbar.classList.toggle('active'); // Show/hide the menu
+});
+
+// Close the menu when a menu item is clicked
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    navbar.classList.remove('active'); // Hide the menu
+  });
+});
 
 document.getElementById('contact-btn').addEventListener('click', function () {
   document.getElementById('contact').scrollIntoView({
     behavior: 'smooth',
   });
-});
-
-// Hamburger Menu:
-hamburger.addEventListener('click', function () {
-  navbar.classList.toggle('active');
 });
 
 //Download CV Button:

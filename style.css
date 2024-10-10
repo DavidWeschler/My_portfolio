@@ -394,6 +394,8 @@ body {
   border-radius: 20px;
   transition: border 0.3s;
   font-family: inherit;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 textarea {
