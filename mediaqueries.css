@@ -1,4 +1,4 @@
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 796px) {
   #navbar {
     position: absolute;
     top: 60px;
@@ -27,12 +27,20 @@
     font-size: 30px;
     cursor: pointer;
   }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .profile img {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 475px) {
-  * {
-    /* padding: 10px; */
-  }
   nav {
     padding: 10px;
   }
