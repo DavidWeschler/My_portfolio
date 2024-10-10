@@ -133,14 +133,14 @@ body {
 
 .icons {
   display: flex;
-  justify-content: center; /* Centers the icons in the container */
-  gap: 30px; /* Space between icons */
+  justify-content: center;
+  gap: 30px;
   margin-top: 5%;
 }
 
 .icons a {
   display: inline-block;
-  width: fit-content; /* Ensures the anchor takes only as much space as the image */
+  width: fit-content;
   height: fit-content;
   text-align: center;
 }
@@ -149,8 +149,8 @@ body {
 .icons img {
   width: 34px;
   height: auto;
-  display: block; /* Block ensures the image is centered within its <a> tag */
-  transition: transform 0.3s ease; /* Smooth scaling on hover */
+  display: block;
+  transition: transform 0.3s ease;
   margin-top: 0;
   margin-right: 0;
 }
@@ -211,7 +211,7 @@ body {
 
 .section-info {
   /*global*/
-  max-width: 900px; /*****************************************************************max width ***************/
+  max-width: 900px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -377,7 +377,7 @@ body {
 #contact-msg {
   font-size: 18px;
   color: #555;
-  margin-bottom: 30px; /* Space between paragraph and form */
+  margin-bottom: 30px;
 }
 
 #contact-form {
