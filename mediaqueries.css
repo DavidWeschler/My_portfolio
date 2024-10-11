@@ -249,14 +249,15 @@
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    /* width: fit-content; */
-    width: auto;
-    overflow-x: hidden;
-  }
   * {
     flex-wrap: wrap;
     box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  body {
+    width: auto;
+    overflow-x: hidden;
   }
 
   #header {
@@ -288,6 +289,10 @@
 
   .icon img {
     margin-left: 5px;
+  }
+
+  .about-summary p {
+    font-size: 18px;
   }
 
   .proj-btns a button {
