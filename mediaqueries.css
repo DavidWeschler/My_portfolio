@@ -40,8 +40,11 @@
   }
 }
 
-/* @media screen and (max-width: 475px) {
-  nav {
+@media screen and (max-width: 475px) {
+  #home {
+    background-color: aquamarine;
+  }
+  /* nav {
     padding: 10px;
   }
 
@@ -93,5 +96,5 @@
 
   footer {
     width: 100%;
-  }
-} */
+  } */
+}
