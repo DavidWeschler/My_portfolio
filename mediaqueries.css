@@ -206,6 +206,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    width: fit-content;
+  }
   * {
     flex-wrap: wrap;
   }
@@ -213,6 +216,8 @@
   #header {
     padding-left: 0;
     padding-right: 0;
+
+    background-color: aquamarine;
   }
 
   #header nav {
