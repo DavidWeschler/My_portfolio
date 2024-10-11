@@ -250,10 +250,13 @@
 
 @media screen and (max-width: 600px) {
   body {
-    /* width: fit-content;W */
+    /* width: fit-content; */
+    width: auto;
+    overflow-x: hidden;
   }
   * {
     flex-wrap: wrap;
+    box-sizing: border-box;
   }
 
   #header {
