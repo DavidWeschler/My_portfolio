@@ -194,6 +194,49 @@
     width: fit-content;
     flex-wrap: wrap;
   }
+  @media screen and (max-width: 600px) {
+    body {
+      width: fit-content;
+    }
+    * {
+      flex-wrap: wrap;
+    }
+
+    #header {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    #header nav {
+      display: flex;
+    }
+
+    #header nav p {
+      font-size: 30px;
+    }
+
+    .profile-info h1 {
+      font-size: 36px;
+    }
+
+    #cv-btn,
+    #contact-btn {
+      width: 8rem;
+    }
+
+    .icons {
+      flex-wrap: nowrap;
+      gap: 0px;
+    }
+
+    .icon img {
+      margin-left: 5px;
+    }
+
+    .proj-btns a button {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 @media screen and (max-width: 896px) {
@@ -207,7 +250,7 @@
 
 @media screen and (max-width: 600px) {
   body {
-    width: fit-content;
+    /* width: fit-content;W */
   }
   * {
     flex-wrap: wrap;
@@ -216,8 +259,6 @@
   #header {
     padding-left: 0;
     padding-right: 0;
-
-    background-color: aquamarine;
   }
 
   #header nav {
