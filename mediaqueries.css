@@ -211,6 +211,33 @@
   }
 
   #header {
-    background-color: aqua;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #header nav {
+    display: flex;
+  }
+
+  #header nav p {
+    font-size: 30px;
+  }
+
+  .profile-info h1 {
+    font-size: 36px;
+  }
+
+  #cv-btn,
+  #contact-btn {
+    width: 8rem;
+  }
+
+  .icons {
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+
+  .icon img {
+    margin-left: 5px;
   }
 }
