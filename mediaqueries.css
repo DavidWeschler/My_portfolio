@@ -245,4 +245,8 @@
   .icon img {
     margin-left: 5px;
   }
+
+  .proj-btns a button {
+    margin-bottom: 15px;
+  }
 }
