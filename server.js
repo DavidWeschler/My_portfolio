@@ -11,7 +11,7 @@ app.use(express.static("public"));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.post("/", (req, res) => {
@@ -22,12 +22,15 @@ app.post("/", (req, res) => {
     auth: {
       user: process.env.EMAIL_USER, // Email from .env
       pass: process.env.EMAIL_PASS, // Password from .env
+
+      user: "davidweschler8@gmail.com", // Email from .env
+      pass: "xfpx nfpy lfss yibg", // Password from .env
     },
   });
 
   const mailOptions = {
     from: `${req.body.name} <${req.body.email}>`,
-    to: process.env.EMAIL_USER,
+    to: "davidweschler8@gmail.com",
     subject: "New Contact Form Submission", // Subject of the email
     text: `You have a new message from ${req.body.name} (${req.body.email}):\n\n${req.body.message}`,
   };
