@@ -7,8 +7,8 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <title>David Weschler</title>
-    <link rel="stylesheet" href="public/style.css" />
-    <link rel="stylesheet" href="public/mediaqueries.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <section id="header">
@@ -26,7 +26,7 @@
 
     <section id="home">
       <div class="profile">
-        <img src="./public/assets/profile-pic.png" alt="Profile Picture" />
+        <img src="./assets/profile-pic.png" alt="Profile Picture" />
         <div class="profile-info">
           <h4>Hi, I'm</h4>
           <h1>David Weschler</h1>
@@ -43,14 +43,14 @@
               href="https://www.linkedin.com/in/david-weschler/"
               target="_blank"
             >
-              <img src="./public/assets/linkedin.png" alt="LinkedIn Icon" />
+              <img src="./assets/linkedin.png" alt="LinkedIn Icon" />
             </a>
             <a
               class="icon"
               href="https://github.com/DavidWeschler"
               target="_blank"
             >
-              <img src="./public/assets/github.png" alt="GitHub Icon" />
+              <img src="./assets/github.png" alt="GitHub Icon" />
             </a>
           </div>
         </div>
@@ -76,35 +76,35 @@
           <h2>Key skills:</h2>
           <div class="my-skills">
             <div class="skill-item">
-              <img src="./public/assets/cpp-icon.png" alt="C/C++ Icon" />
+              <img src="./assets/cpp-icon.png" alt="C/C++ Icon" />
               <p>C/C++</p>
             </div>
             <div class="skill-item">
-              <img src="./public/assets/python-icon.png" alt="Python Icon" />
+              <img src="./assets/python-icon.png" alt="Python Icon" />
               <p>Python</p>
             </div>
             <div class="skill-item">
-              <img src="./public/assets/js-icon.png" alt="JavaScript Icon" />
+              <img src="./assets/js-icon.png" alt="JavaScript Icon" />
               <p>JavaScript</p>
             </div>
             <div class="skill-item">
-              <img src="./public/assets/html-icon.png" alt="HTML Icon" />
+              <img src="./assets/html-icon.png" alt="HTML Icon" />
               <p>HTML</p>
             </div>
             <div class="skill-item">
-              <img src="./public/assets/css-icon.png" alt="CSS Icon" />
+              <img src="./assets/css-icon.png" alt="CSS Icon" />
               <p>CSS</p>
             </div>
             <div class="skill-item">
-              <img src="./public/assets/git-icon.png" alt="Git Icon" />
+              <img src="./assets/git-icon.png" alt="Git Icon" />
               <p>Git</p>
             </div>
             <div class="skill-item">
-              <img src="./public/assets/linux-icon.png" alt="Linux Icon" />
+              <img src="./assets/linux-icon.png" alt="Linux Icon" />
               <p>Linux</p>
             </div>
             <div class="skill-item">
-              <img src="./public/assets/oop-icon.png" alt="OOP Icon" />
+              <img src="./assets/oop-icon.png" alt="OOP Icon" />
               <p>Object-oriented programming</p>
             </div>
           </div>
@@ -172,7 +172,7 @@
             <div class="proj-itself">
               <h3 class="web">Personal Portfolio</h3>
               <h5>(This website)</h5>
-              <img src="./public/assets/this-website.jpg" />
+              <img src="./assets/this-website.jpg" />
               <div class="skills-used">
                 <ul>
                   <li>HTML</li>
@@ -208,20 +208,24 @@
           Feel free to drop a message, reach out or just say Hello! 😎
         </p>
         <form
-          class="contact-me-form"
           id="contact-form"
-          action="http://localhost:3000/submit"
+          action="https://api.web3forms.com/submit"
           method="POST"
         >
-          <input type="text" id="name" placeholder="Name" required />
+          <input
+            type="hidden"
+            name="access_key"
+            value="f328386e-7eee-41ce-863d-329bdab966ce"
+          />
+          <input type="text" name="name" placeholder="Name" required />
           <input
             type="email"
-            id="email"
+            name="email"
             placeholder="Email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             required
           />
-          <textarea id="message" placeholder="Message" required></textarea>
+          <textarea name="message" placeholder="Message" required></textarea>
 
           <input
             type="hidden"
