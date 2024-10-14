@@ -60,6 +60,8 @@ contactForm.addEventListener('submit', e => {
 
   let xhr = new XMLHttpRequest();
   xhr.open('POST', '/');
+  // xhr.open('POST', 'https://davidweschler.com/');
+
   xhr.setRequestHeader('content-type', 'application/json');
   xhr.onload = function () {
     console.log(xhr.responseText);
