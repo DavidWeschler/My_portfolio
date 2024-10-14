@@ -43,36 +43,36 @@ skillItems.forEach(item => {
 });
 
 //--------------------
-// const contactForm = document.querySelector('.contact-me-form');
+const contactForm = document.querySelector('.contact-me-form');
 
-// let fullName = document.getElementById('name');
-// let email = document.getElementById('email');
-// let message = document.getElementById('message');
+let fullName = document.getElementById('name');
+let email = document.getElementById('email');
+let message = document.getElementById('message');
 
-// contactForm.addEventListener('submit', e => {
-//   e.preventDefault();
+contactForm.addEventListener('submit', e => {
+  e.preventDefault();
 
-//   let formData = {
-//     name: fullName.value,
-//     email: email.value,
-//     message: message.value,
-//   };
+  let formData = {
+    name: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
 
-//   let xhr = new XMLHttpRequest();
-//   xhr.open('POST', '/');
-//   xhr.setRequestHeader('content-type', 'application/json');
-//   xhr.onload = function () {
-//     console.log(xhr.responseText);
+  let xhr = new XMLHttpRequest();
+  xhr.open('POST', '/');
+  xhr.setRequestHeader('content-type', 'application/json');
+  xhr.onload = function () {
+    console.log(xhr.responseText);
 
-//     if (xhr.responseText == 'success') {
-//       alert('Message Sent');
-//       fullName.value = '';
-//       email.value = '';
-//       message.value = '';
-//     } else {
-//       alert('Something went wrong, try again');
-//     }
-//   };
+    if (xhr.responseText == 'success') {
+      alert('Message Sent');
+      fullName.value = '';
+      email.value = '';
+      message.value = '';
+    } else {
+      alert('Something went wrong, try again');
+    }
+  };
 
-//   xhr.send(JSON.stringify(formData));
-// });
+  xhr.send(JSON.stringify(formData));
+});
