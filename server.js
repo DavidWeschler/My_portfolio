@@ -13,9 +13,15 @@ app.use(express.static(`${__dirname}`));
 app.use(express.json());
 app.use(
   cors({
-    origin: '*', // Allow all origins (use with caution, adjust for security in production)
+    origin: '*', // Change to specific origin in production
+    methods: ['GET', 'POST'], // Ensure POST is allowed
   })
 );
+
+app.use((req, res, next) => {
+  console.log(`${req.method} request for '${req.url}'`);
+  next();
+});
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
