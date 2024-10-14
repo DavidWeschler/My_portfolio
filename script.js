@@ -59,7 +59,7 @@ contactForm.addEventListener('submit', e => {
   };
 
   let xhr = new XMLHttpRequest();
-  xhr.open('POST', '/');
+  xhr.open('POST', '/submit');
   xhr.setRequestHeader('content-type', 'application/json');
   xhr.onload = function () {
     console.log(xhr.responseText);

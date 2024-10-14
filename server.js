@@ -20,15 +20,15 @@ app.post('/', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.EMAIL_USER, // Email from .env
-      pass: process.env.EMAIL_PASS, // Password from .env
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
   const mailOptions = {
     from: `${req.body.name} <${req.body.email}>`,
     to: process.env.EMAIL_USER,
-    subject: 'New Contact Form Submission', // Subject of the email
+    subject: 'New Contact Form Submission',
     text: `You have a new message from ${req.body.name} (${req.body.email}):\n\n${req.body.message}`,
   };
 
