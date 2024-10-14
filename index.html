@@ -208,20 +208,24 @@
           Feel free to drop a message, reach out or just say Hello! 😎
         </p>
         <form
-          class="contact-me-form"
           id="contact-form"
-          action="https://davidweschler.com/submit"
+          action="https://api.web3forms.com/submit"
           method="POST"
         >
-          <input type="text" id="name" placeholder="Name" required />
+          <input
+            type="hidden"
+            name="access_key"
+            value="f328386e-7eee-41ce-863d-329bdab966ce"
+          />
+          <input type="text" name="name" placeholder="Name" required />
           <input
             type="email"
-            id="email"
+            name="email"
             placeholder="Email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             required
           />
-          <textarea id="message" placeholder="Message" required></textarea>
+          <textarea name="message" placeholder="Message" required></textarea>
 
           <input
             type="hidden"
@@ -233,6 +237,7 @@
           <button type="submit">Send</button>
         </form>
       </div>
+          
     </section>
 
     <footer>
