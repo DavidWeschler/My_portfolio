@@ -208,24 +208,20 @@
           Feel free to drop a message, reach out or just say Hello! 😎
         </p>
         <form
+          class="contact-me-form"
           id="contact-form"
-          action="https://api.web3forms.com/submit"
+          action="http://localhost:5000/submit"
           method="POST"
         >
-          <input
-            type="hidden"
-            name="access_key"
-            value="f328386e-7eee-41ce-863d-329bdab966ce"
-          />
-          <input type="text" name="name" placeholder="Name" required />
+          <input type="text" id="name" placeholder="Name" required />
           <input
             type="email"
-            name="email"
+            id="email"
             placeholder="Email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             required
           />
-          <textarea name="message" placeholder="Message" required></textarea>
+          <textarea id="message" placeholder="Message" required></textarea>
 
           <input
             type="hidden"
